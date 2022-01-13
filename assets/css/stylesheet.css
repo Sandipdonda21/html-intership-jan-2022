@@ -284,6 +284,22 @@ select {
     .col_loc_in_img1 img{
         width: 100%;
     }
+    .recent_holiday h2{
+        padding-right: unset;
+        text-align: center;
+        
+    }
+    .recent_holiday p{
+        text-align: center;
+        
+    }
+    .recent_holiday .icons{
+        justify-content: center;
+    }
+    .recent_holiday button{
+        float: unset;
+        margin: 0px auto;
+    }
 }
 
 
