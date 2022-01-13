@@ -1,0 +1,463 @@
+/* -----include font family----- */
+@font-face {
+    font-family:LustScript ;
+    src: url('../font/LustScript.otf');
+}
+@font-face {
+    font-family:ProximaNovaFont;
+    src: url(../font/ProximaNovaFont.otf);
+}
+@font-face {
+    font-family:KeplerStdBold ;
+    src: url(../font/KeplerStd-Bold.otf);
+}
+@font-face {
+    font-family:DejaVuSans ;
+    src: url(../font/DejaVuSans.otf);
+}
+
+
+
+
+/* ----css start---- */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+
+
+
+/* ----HEADER CSS---- */
+header{
+    width: 100%;
+    text-align: center;
+}
+ul{
+    justify-content: space-between;
+    padding: 18px 0px;
+    margin: 0px;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+}
+.container{
+    max-width: 1140px;
+    margin: 0px auto;
+}
+nav > div > .navbar-toggler{
+    background-color: skyblue;
+}
+nav > div > .navbar-toggler:focus{
+    box-shadow: none;
+}
+li .nav-link{
+    font-family: ProximaNovaFont;
+    font-size: 16px;
+    color: black;
+}
+.nav-link-logo{
+    text-decoration: none;
+    color: black;
+}
+.mobile-logo a{
+    text-decoration: none;
+    font-family: Lustscript;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+
+/* ----HEADER MEDIA QUERY---- */
+@media screen and (min-width:991px){
+    .navbar-brand{
+        display:none;
+    }
+    .navbar{
+        padding: 0px 100px;
+        height: 69px;
+    }
+}
+@media screen and (max-width:991px) {
+    .nav-link-logo{
+        display: none;
+    }
+}
+
+
+
+/* ----SECTION CSS---- */
+section{
+    background-color: #ecf0f1;
+}
+.sec{
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    display: block;
+}
+.sec_img{
+    width: 100%;
+}
+.sec_img_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 60px;
+    font-family:ProximaNovaFont ;
+    color: white;
+    margin: 0px;
+}
+section{
+    display: block;
+}
+.sec_midd_selecter{
+    height: 161px;
+    max-width: 966px;
+    position: relative;
+    margin:0 auto;
+    margin-top: -80px;
+    background-color: white;
+    padding: 60px 20px;
+}
+.sec_form{
+    display: flex;
+    justify-content: space-between;
+}
+.form_div{
+    position: relative;
+    width: 21%;
+}
+.form_div::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    left: 0px;
+    bottom: 4px;
+}
+select{
+    width: 100%;
+    border: none;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    font-size: 16px;
+  }
+  select:focus{
+      outline: none;
+  }
+  .submit_btn{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #f31131;
+      border: none;
+  }
+  .submit_btn:hover{
+      cursor: pointer;
+      border: 1px solid #f31131 ;
+      background-color: white;
+  }
+  .submit_btn:hover svg{
+      fill: #f31131;
+  }
+  .bi_bi-arrow-right{
+      fill: white;
+  }
+  .bibi-caret-down-fill{
+      position: absolute;
+      top: 0px;
+      right: 0px;
+  }
+
+
+  /* ----VACATION IDIA CSS----- */
+  .vacation_ideas{
+      background-color: transparent;
+      text-align: center;
+      max-width: 1140px;
+      margin: 0px auto;
+  }
+  .vacation_ideas_h{
+      margin-top: 5%;
+      font-family: KeplerStdBold;
+      font-size: 48px;
+      margin-bottom: 0px;
+  }
+  .sec_sep{
+    margin: 20px 0px;
+  }
+  
+  .col{
+    text-align: center;
+  }
+  .head_img{
+      position: absolute;
+        bottom: -23px;
+        width: 300px;
+        background-color: white;
+        left: 50%;
+        transform: translate(-50%,-50%);
+  }
+  .head_img_head{
+      margin: 14px;
+      border: 0.5px solid rgb(194, 184, 184);
+  }
+  h3{
+      font-size: 24px;
+      font-family:KeplerStdBold ;
+  }
+  
+  
+
+
+
+/* ----RECENT HOLIDAY CSS---- */
+.recent_holiday{
+    background-color: transparent;
+      text-align: center;
+      margin: 0px auto;
+}
+.recent_holiday .icons{
+    display: flex;
+    align-items: baseline;
+}
+.recent_holiday p{
+    font-family: ProximaNovaFont;
+    font-size: 16px;
+    text-align: left;
+    padding: 0px 15px 0px 0px;
+    line-height: 1.5;
+}
+.recent_holiday .icons p{
+    margin-left: 10px;
+}
+.recent_holiday button{
+    padding: 10px 10px;
+    border-radius: 25px;
+    color: white;
+    background-color: #f31131 ;
+    border: none;
+    float: left;
+}
+.rcol{
+    background-color: white;
+    padding: 18px;
+}
+.recent_holiday .desc{
+    background-color: white;
+}
+.col_loc_in_img1{
+    padding: 0px;
+    height: 75%;
+    overflow: hidden;
+}
+.col_loc_in_img3{
+    display:flex;
+    height: 25%;
+}
+.col_loc_in_img3 img{
+    width: 33.33%;
+}
+.recent_holiday h2{
+    font-family:KeplerStdBold ;
+    font-size: 30px;
+    padding-right: 135px;
+    text-align: justify;
+}
+
+
+
+
+
+
+/* ----RECENT HOLIDAY MEDIA---- */
+@media screen and (max-width:768px) {
+    .col_loc_in_img1 img{
+        width: 100%;
+    }
+}
+
+
+
+
+/* ----Why we are different CSS---- */
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(67, 104, 11);
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle img{
+    margin: auto auto;
+}
+.col h2{
+    font-family: KeplerStdBold;
+}
+.col p{
+color: #454851;
+font-family: ProximaNovaFont;
+}
+
+
+
+/* ----LEAVE MESSAGE CSS---- */
+.mess{
+    background-image: url('../img/form-bg.png');
+    min-height: 570px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.mess_form{
+    background-color: white;
+    max-height: 400px;
+    max-width: 390px;
+    position:  absolute;
+    bottom: 0px;
+    right: 176px;
+    padding: 40px;
+}
+.mess_form h2{
+    font-size: 30px;
+    padding-top: 0px;
+    font-family: KeplerStdBold;
+    margin: 0px;
+}
+.mess_form input{
+    width: 100%;
+    color: rgb(202, 202, 202);
+    margin: 15px 0px;
+    border: none;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    padding: 5px 0px;
+}
+.mess_form input:focus{
+    border: none;
+    outline: none;
+    border-bottom:1px solid rgb(37, 36, 36) ;
+    color: black;
+}
+.mess_form button{
+    padding: 10px 15px;
+    background-color: #f31131;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    margin-top: 80px;
+}
+.mess_form button:hover{
+    color: #f31131;
+    background-color: white;
+    border: 1px solid #f31131;
+}
+
+
+
+
+/* ----MESSAGE MEDIA QUERY---- */
+@media screen and (max-width:768px) {
+    .mess_form{
+        right: unset;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width:450px;
+        width: 90%;
+    }
+    .vacation_ideas_h{
+        font-size: 35px;
+    }
+}
+
+
+
+/* ----FOOTER CSS---- */
+footer{
+    background-color: black;
+    padding: 48px 48px 48px 100px;
+}
+footer .container-fluid{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.f_info{
+    width: 48%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+.f_info h4,
+.f_info1 h4{
+    color: white;
+    font-size: 20px;
+    font-family:DejaVuSans ;
+}
+.f_info_inner{
+    width: 20%;
+    flex-wrap: wrap;
+}
+.f_info_inner_last{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.f_info_inner_last h4{
+    width: 100%;
+}
+.f_info_inner_last_list{
+    width: 50%;
+}
+.f_info ul{
+    display: unset;
+    font-size: 14px;
+    font-family: ProximaNovaFont;
+}
+.f_info ul li,
+.f_info1 ul li {
+    color: white;
+    list-style: none;
+}
+.f_info1 p{
+    color: white;
+}
+pre{
+    color: white;
+}
+.f_info1{
+    width: 48%;
+    text-align: right;
+    padding-right: 75px;
+    margin-top: 26.6px;
+}
+.f_info1 ul{
+    display: unset;
+}
+.foo_copy{
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+@media screen and (max-width:1392px) {
+    .f_info{
+        width: 100%;
+    }
+    .f_info1{
+        text-align: left;
+    }
+}
