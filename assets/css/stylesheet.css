@@ -195,14 +195,18 @@ select {
   .sec_sep{
     margin: 20px 0px;
   }
-  
+  .vacation_ideas .row img{
+      width: 100%;
+      height: 100%;
+      display: block;
+  }
   .col{
     text-align: center;
   }
   .head_img{
-      position: absolute;
-        bottom: -23px;
-        width: 300px;
+        position: absolute;
+        bottom:  20px;
+        width: 80%;
         background-color: white;
         left: 50%;
         transform: translate(-50%,-50%);
@@ -213,10 +217,18 @@ select {
   }
   h3{
       font-size: 24px;
-      font-family:KeplerStdBold ;
+      font-family:KeplerStdBold ; 
   }
   
-  
+
+
+
+  /* ----VACATION IDIA MIDEA QUERY---- */
+@media  screen and (max-width:768px) {
+    .col-sm-12{
+        padding: 25px;
+    }
+}
 
 
 
@@ -247,6 +259,11 @@ select {
     background-color: #f31131 ;
     border: none;
     float: left;
+}
+.recent_holiday button:hover{
+    background-color: white;
+    border: 1px solid #f31131;
+    color: #f31131;
 }
 .rcol{
     background-color: white;
