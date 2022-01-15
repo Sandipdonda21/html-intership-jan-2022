@@ -326,6 +326,12 @@ select {
 
 
 /* ----Why we are different CSS---- */
+.why_we{
+    background-color: transparent;
+      text-align: center;
+      max-width: 1140px;
+      margin: 0px auto;
+}
 .circle{
     width: 100px;
     height: 100px;
@@ -337,6 +343,8 @@ select {
     justify-content: center;
 }
 .circle img{
+    width: unset;
+    height: unset;
     margin: auto auto;
 }
 .col h2{
