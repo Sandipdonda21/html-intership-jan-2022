@@ -92,12 +92,6 @@ li .nav-link{
 section{
     background-color: #ecf0f1;
 }
-.sec{
-    position: relative;
-    width: 100%;
-    margin: 0px;
-    display: block;
-}
 .sec_img{
     width: 100%;
 }
@@ -115,7 +109,6 @@ section{
     display: block;
 }
 .sec_midd_selecter{
-    height: 161px;
     max-width: 966px;
     position: relative;
     margin:0 auto;
@@ -170,8 +163,7 @@ select {
 @media screen and (max-width:1200px) {
     .sec_midd_selecter{
         padding: 20px 10px;
-    }
-    .sec_midd_selecter .col-xl-2{
+        position: unset;
     }
     .submit_btn{
         margin: 0px auto;
