@@ -480,6 +480,7 @@ footer ul{
     display: unset;
     font-size: 14px;
     font-family: ProximaNovaFont;
+    padding: 0px;
 }
 footer ul li,
 footer ul li {
@@ -505,6 +506,9 @@ pre{
     text-align: center;
 }
 @media screen and (max-width:1200px) {
+    footer .row h4{
+        margin-top: 25px;
+    }
     footer .row .col-xl-4 .col{
         margin-top: 20px;
     }
