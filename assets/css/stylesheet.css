@@ -127,6 +127,7 @@ select {
     text-indent: 1px;
     text-overflow: '';
     font-size: 16px;
+    background-color: transparent;
   }
   select:focus{
       outline: none;
