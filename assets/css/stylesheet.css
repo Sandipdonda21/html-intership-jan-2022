@@ -164,9 +164,13 @@ select {
     .sec_midd_selecter{
         padding: 20px 10px;
         position: unset;
+        margin: 0px;
     }
     .submit_btn{
         margin: 0px auto;
+    }
+    .container-fluid .sec_img_text{
+        font-size: 45px;
     }
 }
 
