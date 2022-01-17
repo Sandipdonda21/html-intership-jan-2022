@@ -123,23 +123,7 @@ section{
     background-color: white;
     padding: 60px 20px;
 }
-.sec_form{
-    display: flex;
-    justify-content: space-between;
-}
-.form_div{
-    position: relative;
-    width: 21%;
-}
-.form_div::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: black;
-    left: 0px;
-    bottom: 4px;
-}
+
 select{
     width: 100%;
     border: none;
@@ -160,6 +144,7 @@ select {
       border-radius: 50%;
       background-color: #f31131;
       border: none;
+      position: relative;
   }
   .submit_btn:hover{
       cursor: pointer;
@@ -170,13 +155,31 @@ select {
       fill: #f31131;
   }
   .bi_bi-arrow-right{
-      fill: white;
-  }
-  .bibi-caret-down-fill{
       position: absolute;
-      top: 0px;
-      right: 0px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      fill: white;
+      margin: 0px auto;
   }
+ .bibi-caret-down-fill{
+     margin: auto 0;
+ }
+
+ /* ----SECTION MEDIA QUERY---- */
+@media screen and (max-width:1200px) {
+    .sec_midd_selecter{
+        padding: 20px 10px;
+    }
+    .sec_midd_selecter .col-xl-2{
+    }
+    .submit_btn{
+        margin: 0px auto;
+    }
+}
+
+
+
 
 
   /* ----VACATION IDIA CSS----- */
@@ -225,8 +228,18 @@ select {
 
   /* ----VACATION IDIA MIDEA QUERY---- */
 @media  screen and (max-width:768px) {
-    .col-sm-12{
+    .vacation_ideas .col-sm-12{
         padding: 25px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .vacation_ideas .col-md-6{
+        padding: 25px;
+    }
+}
+@media screen and (max-width:768px) {
+    .vacation_ideas .col-sm-12{
+        padding: 20px;
     }
 }
 
