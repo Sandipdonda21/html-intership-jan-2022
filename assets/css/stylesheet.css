@@ -172,6 +172,22 @@ select {
     .container-fluid .sec_img_text{
         font-size: 45px;
     }
+    .sec_midd_selecter form{
+        background-color: transparent;
+    }
+}
+@media screen and (max-width:668px) {
+    .sec_midd_selecter{
+        padding: 20px 20px;
+        position: unset;
+        margin: 0px;
+    }
+    .submit_btn{
+        margin: 0px auto;
+    }
+    .container-fluid .sec_img_text{
+        font-size: 30px;
+    }
 }
 
 
